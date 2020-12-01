@@ -1,0 +1,34 @@
+#
+# -*- coding: utf-8 -*-
+
+import sys
+from sphinxapi import *
+
+
+mode = SPH_MATCH_EXTENDED2
+cl = SphinxClient()
+host = 'localhost'
+port = 9312
+cl.SetServer ( host, port )
+cl.SetWeights ( [100, 1] )
+cl.SetMatchMode ( mode )
+search = u'"175/60R15"' 
+fields = 'name,overview,cat' 
+if fields:
+    fields='@(%s)' % (fields)
+res_search = ''
+prod_ids = []
+for word in search.split(' '):
+    if word:
+        res_search+= '*'+word+'*'
+if res_search:
+#   query = ' '.join([fields, res_search])
+    query = ' '.join([fields, search])
+    print query
+    res = cl.Query(query)
+    print res
+    if res.has_key('matches'):
+        for match in res['matches']:
+            prod_ids.append(match['id'])
+print prod_ids
+

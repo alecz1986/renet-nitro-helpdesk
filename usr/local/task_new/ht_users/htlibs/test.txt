@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sphinx:docset xmlns:sphinx="urn:sphinx">
+  <sphinx:schema>
+    <sphinx:field name="tag17"/>
+    <sphinx:field name="tag12"/>
+    <sphinx:field name="tag51"/>
+    <sphinx:field name="tag40"/>
+    <sphinx:field name="tag2"/>
+    <sphinx:field name="tag1"/>
+    <sphinx:field name="tag46"/>
+    <sphinx:field name="tag3"/>
+    <sphinx:field name="tag8"/>
+    <sphinx:field name="tag27"/>
+    <sphinx:field name="tag13"/>
+    <sphinx:field name="tag30"/>
+    <sphinx:field name="tag9"/>
+    <sphinx:field name="tag59"/>
+    <sphinx:field name="tag26"/>
+    <sphinx:field name="tag52"/>
+    <sphinx:field name="tag24"/>
+    <sphinx:field name="tag58"/>
+    <sphinx:field name="tag15"/>
+    <sphinx:field name="tag19"/>
+    <sphinx:field name="tag14"/>
+    <sphinx:field name="tag31"/>
+    <sphinx:field name="tag57"/>
+    <sphinx:field name="tag25"/>
+    <sphinx:field name="tag5"/>
+    <sphinx:field name="tag4"/>
+    <sphinx:field name="tag10"/>
+    <sphinx:field name="tagother"/>
+    <sphinx:field name="task"/>
+    <sphinx:field name="glob"/>
+    <sphinx:field name="dt"/>
+    <sphinx:field name="sys"/>
+  </sphinx:schema>
+  <sphinx:document id="210797">
+    <tag1>5</tag1>
+    <tag2>5</tag2>
+    <tag3>5</tag3>
+    <tag4></tag4>
+    <tag5></tag5>
+    <tag8></tag8>
+    <tag9></tag9>
+    <tag17></tag17>
+    <tagother>   </tagother>
+    <task>1</task>
+    <glob>31003</glob>
+    <sys>1</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+  <sphinx:document id="210798">
+    <tag1>5</tag1>
+    <tag2>5</tag2>
+    <tag3>5</tag3>
+    <tag4></tag4>
+    <tag5></tag5>
+    <tag8></tag8>
+    <tag9></tag9>
+    <tag17></tag17>
+    <tagother>   </tagother>
+    <task>1</task>
+    <glob>31004</glob>
+    <sys>1</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+  <sphinx:document id="210799">
+    <tag1></tag1>
+    <tag2></tag2>
+    <tag3></tag3>
+    <tag4></tag4>
+    <tag5></tag5>
+    <tag8></tag8>
+    <tag9></tag9>
+    <tag17></tag17>
+    <tagother>   </tagother>
+    <task>1</task>
+    <glob>31005</glob>
+    <sys>1</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+  <sphinx:document id="210800">
+    <tag1></tag1>
+    <tag2></tag2>
+    <tag3></tag3>
+    <tag4></tag4>
+    <tag5></tag5>
+    <tag8></tag8>
+    <tag9></tag9>
+    <tag17></tag17>
+    <tagother>   </tagother>
+    <task>1</task>
+    <glob>31006</glob>
+    <sys>1</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+  <sphinx:document id="210801">
+    <tag59>555</tag59>
+    <tag25></tag25>
+    <tag26></tag26>
+    <tag15></tag15>
+    <tag27></tag27>
+    <tagother> Задание было закрыто Зимина Светлана 2011-03-03 20:08:20</tagother>
+    <task>38</task>
+    <glob>31007</glob>
+    <sys>0</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+  <sphinx:document id="210802">
+    <tag51></tag51>
+    <tag52></tag52>
+    <tagother>   Задание было закрыто Зимина Светлана 2011-03-03 20:08:20</tagother>
+    <task>40</task>
+    <glob>31007</glob>
+    <sys>0</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+  <sphinx:document id="210803">
+    <tagother> </tagother>
+    <task>17</task>
+    <glob>31004</glob>
+    <sys>1</sys>
+    <dt>2011_03_03</dt>
+  </sphinx:document>
+</sphinx:docset>
+

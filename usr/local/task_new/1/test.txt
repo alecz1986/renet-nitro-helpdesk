@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sphinx:docset xmlns:sphinx="urn:sphinx">
+  <sphinx:schema>
+    <sphinx:field name="tag17"/>
+    <sphinx:field name="tag12"/>
+    <sphinx:field name="tag51"/>
+    <sphinx:field name="tag40"/>
+    <sphinx:field name="tag2"/>
+    <sphinx:field name="tag1"/>
+    <sphinx:field name="tag46"/>
+    <sphinx:field name="tag3"/>
+    <sphinx:field name="tag8"/>
+    <sphinx:field name="tag27"/>
+    <sphinx:field name="tag13"/>
+    <sphinx:field name="tag30"/>
+    <sphinx:field name="tag9"/>
+    <sphinx:field name="tag59"/>
+    <sphinx:field name="tag26"/>
+    <sphinx:field name="tag52"/>
+    <sphinx:field name="tag24"/>
+    <sphinx:field name="tag58"/>
+    <sphinx:field name="tag15"/>
+    <sphinx:field name="tag19"/>
+    <sphinx:field name="tag14"/>
+    <sphinx:field name="tag31"/>
+    <sphinx:field name="tag57"/>
+    <sphinx:field name="tag25"/>
+    <sphinx:field name="tag5"/>
+    <sphinx:field name="tag4"/>
+    <sphinx:field name="tag10"/>
+    <sphinx:field name="tagother"/>
+    <sphinx:field name="task"/>
+    <sphinx:field name="glob"/>
+    <sphinx:field name="dt"/>
+    <sphinx:field name="sys"/>
+  </sphinx:schema>
+  <sphinx:document id="1">
+    <tag19>89093330663</tag19>
+    <tag12>БЕЛОВ</tag12>
+    <tag13>Москва Замосворечье Старый Толмачевский переулок 3 40</tag13>
+    <tag14>Саратов Серова 33_37</tag14>
+    <tag15>Расулов Дмитрий</tag15>
+    <tagother> ЧП Галина  председатель дома 89053688298</tagother>
+    <task>2</task>
+    <glob>1</glob>
+    <sys>1</sys>
+    <dt>2008_10_13</dt>
+  </sphinx:document>
+  <sphinx:document id="2">
+    <tagother> не указан тип проводимой технической экспертизы</tagother>
+    <task>18</task>
+    <glob>1</glob>
+    <sys>1</sys>
+    <dt>2008_10_13</dt>
+  </sphinx:document>
+  <sphinx:document id="3">
+    <tagother> провести тех экспертизу подключение по ВОЛС</tagother>
+    <task>18</task>
+    <glob>1</glob>
+    <sys>1</sys>
+    <dt>2008_10_13</dt>
+  </sphinx:document>
+  <sphinx:document id="4">
+    <tagother> </tagother>
+    <task>3</task>
+    <glob>1</glob>
+    <sys>1</sys>
+    <dt>2008_10_14</dt>
+  </sphinx:document>
+  <sphinx:document id="5">
+    <tagother> Провести техническую экспертизу подключения по ВОЛС клиента - АКБ Пробизнесбанкг. Саратов , ул. Ломоносова , 1контакт по клиенту - Юшин Антон (903)6767145Клиента предварительно предупредил.Информация для клиента: мы проводим предварительную экспертизу по заявке ОАО Ростелеком.</tagother>
+    <task>36</task>
+    <glob>2</glob>
+    <sys>1</sys>
+    <dt>2008_10_14</dt>
+  </sphinx:document>
+  <sphinx:document id="6">
+    <tagother> Провести техническую экспертизу подключения по ВОЛС клиента - МПР России (Саратов) ПК2. Саратов , 5-й Соколовогорский пр-д , д3.Представитель клиента - Колодочка Борис Андреевичтел:(8452)514841Завтра (15.10.2008) в 9-30 необходимо забрать представителя клиента на Московской , 66 (вестибюль перед входом в Альфабанк  , дверь налевоЮ комната 108) и с ним выехать на объект.</tagother>
+    <task>36</task>
+    <glob>3</glob>
+    <sys>1</sys>
+    <dt>2008_10_14</dt>
+  </sphinx:document>
+  <sphinx:document id="7">
+    <tag19>23 44 98</tag19>
+    <tag12>САРАТОВСКАЯ БУРОВАЯ КОМПАНИЯ</tag12>
+    <tag13>МОСКОВСКАЯ 55</tag13>
+    <tag14>МОСКОВСКАЯ 55</tag14>
+    <tag15>ДМИТРИЙ ЕЛЕНА ВИКТОРОВНА</tag15>
+    <tagother>  ВХОД СО ДВОРА С 9 ДО 18 Филиппова Екатерина 2008-10-30 11:15</tagother>
+    <task>2</task>
+    <glob>4</glob>
+    <sys>1</sys>
+    <dt>2008_10_15</dt>
+  </sphinx:document>
+  <sphinx:document id="8">
+    <tag19>29-82-32</tag19>
+    <tag12>Мебельная фабрика 2</tag12>
+    <tag13>Вольская , 29</tag13>
+    <tag14>Вольская , 29</tag14>
+    <tag15>Мельников Павел</tag15>
+    <tagother> ЗАО провести тех. экспертизу 20-21 октября Огурцова Светлана 2009-01-15 09:29</tagother>
+    <task>2</task>
+    <glob>5</glob>
+    <sys>1</sys>
+    <dt>2008_10_15</dt>
+  </sphinx:document>
+  <sphinx:document id="9">
+    <tag19>441049</tag19>
+    <tag12>ЖЕЛДОРТРАНС</tag12>
+    <tag13>410012 Саратов улица Слонова 1 офис 1117</tag13>
+    <tag14>410005 Саратов улица Большая Садовая 239 офис 501</tag14>
+    <tag15>марина</tag15>
+    <tagother> ООО подключение по локальной сети в офисном здании кабель в офисе есть Тихомирова Юлия 2008-12-08 16:00</tagother>
+    <task>2</task>
+    <glob>6</glob>
+    <sys>1</sys>
+    <dt>2008_10_15</dt>
+  </sphinx:document>
+  <sphinx:document id="10">
+    <tag19>295909</tag19>
+    <tag12>МЕТАЛЛТРЕЙДИНГ</tag12>
+    <tag13>ЧЕРНЫШЕВСКОГО 88</tag13>
+    <tag14>ВСО</tag14>
+    <tag15>АЛЕКСЕЙ</tag15>
+    <tagother> ООО 651507 Юрий Николаевич начальник базы Предварительно созвониться с Алексеем он пояснит адрес Огурцова Светлана 2009-08-11 09:18</tagother>
+    <task>2</task>
+    <glob>7</glob>
+    <sys>1</sys>
+    <dt>2008_10_16</dt>
+  </sphinx:document>
+</sphinx:docset>
+

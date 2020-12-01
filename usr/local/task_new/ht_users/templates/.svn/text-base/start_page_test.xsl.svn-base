@@ -1,0 +1,153 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xi="urn:xi" xmlns:css="urn:css">
+  <xsl:template match="/">
+	  <!--    <H4 align='center'>СПЕЦПРЕДЛОЖЕНИЯ</H4>-->
+    <!--    <div class='week-goods goods'>
+      <xsl:for-each select="/R/data/spec/prod">
+        <p class="center-column-goods">
+          <xsl:element name='a'>
+            <xsl:attribute name="href">category?category_id=<xsl:value-of select='@cat_id'/></xsl:attribute>
+            <xsl:attribute name="class">category</xsl:attribute>
+            <xsl:value-of select='@cat_name'/>
+          </xsl:element>
+          <xsl:element name='a'>
+            <xsl:attribute name="href">product?product_id=<xsl:value-of select='@id'/></xsl:attribute>
+            <xsl:attribute name="class">thumb</xsl:attribute>
+             <xsl:element name='img'>
+              <xsl:attribute name="alt"><xsl:value-of select='@name'/></xsl:attribute>
+              <xsl:attribute name="title"><xsl:value-of select='@name'/></xsl:attribute>
+              <xsl:attribute name="src">/<xsl:value-of select='@path'/>/<xsl:value-of select='@photo'/>_small.png</xsl:attribute>
+              <xsl:attribute name="border">0</xsl:attribute>
+              <xsl:attribute name="width"><xsl:value-of select='@small_x'/></xsl:attribute>
+              <xsl:attribute name="height"><xsl:value-of select='@small_y'/></xsl:attribute>
+            </xsl:element>
+          </xsl:element>
+        <b css:padding="0px" css:margin="0px">
+          <xsl:element name='a'>
+            <xsl:attribute name="href">product?product_id=<xsl:value-of select='@id'/></xsl:attribute>
+            <xsl:attribute name="class">name</xsl:attribute>
+            <xsl:value-of select='@name'/>
+          </xsl:element>
+        </b>
+        <em css:color="#353535" css:font-size="9px" css:margin-top="5px">
+          <xsl:value-of select="."/>
+        </em>
+        <xsl:if test="@old_price!='0.00'">
+          <span class='old-price'><xsl:value-of select="@old_price"/></span>
+        </xsl:if>
+        <span class='price'><xsl:value-of select='@price'/></span>
+        <span>
+          <xsl:element name='a'>
+            <xsl:attribute name="href">add2cart?product_id=<xsl:value-of select='@id'/>&#38;path_info=<xsl:value-of select='/R/page/path_encode'/></xsl:attribute>
+            <xsl:attribute name="class">buy</xsl:attribute>
+            <xsl:text>купить</xsl:text>
+          </xsl:element>
+        </span></p>
+      </xsl:for-each>
+    </div>-->
+    <!--	<div class='banner' id='rotator' css:margin="0px" css:padding="0px" width='69%' align='left'></div>
+  <script type='text/javascript'><![CDATA[
+			var s1 = new SWFObject("/data/imagerotator.swf?v=0.95","rotator","527","125","7");
+      s1.addVariable("file","/data/spec.xml");
+      s1.addVariable("transition","slide");
+			s1.addVariable("transition_speed","150");
+			s1.addVariable("transition_blur","20");
+			s1.addVariable("overstretch","true");
+			s1.addVariable("shownavigation","true");
+			s1.addVariable("rotatetime",2);
+			s1.addVariable("repeat","true");
+      s1.addVariable("width","527");
+      s1.addVariable("height","125");
+      s1.addVariable("linkfromdisplay","true");
+			s1.addVariable("linktarget","_self");
+      s1.addParam("wmode","transparent");
+      s1.write("rotator");]]>
+    </script>-->
+    <xsl:for-each select="/R/data/spec">
+      <div class='week-goods goods' css:height='240px' css:overflow='hidden' id='goods'>
+	<h3 css:border='0px' align='center' css:color='#FFB438'>СПЕЦПРЕДЛОЖЕНИЕ</h3>
+        <xsl:for-each select="./prods/prod">
+	  <p class="center-column-goods" css:height="210px" css:width='185px' align='center'>
+            <xsl:element name='a'>
+      	      <xsl:attribute name="class">thumb</xsl:attribute>
+              <xsl:attribute name="href">product?product_id=<xsl:value-of select='@id'/></xsl:attribute>
+	      <!--	      <xsl:attribute name="css:min-height">103px</xsl:attribute>-->
+	      <xsl:attribute name="css:width"><xsl:value-of select='@small_x'/>px</xsl:attribute>
+	      <xsl:attribute name="css:margin">0px <xsl:value-of select='@margin_x'/>px</xsl:attribute>
+               <xsl:element name='img'>
+                <xsl:attribute name="alt"><xsl:value-of select='@name'/></xsl:attribute>
+                  <xsl:attribute name="title"><xsl:value-of select='@name'/></xsl:attribute>
+                <xsl:attribute name="border">0</xsl:attribute>
+                <xsl:attribute name="src">/<xsl:value-of select='@path'/>/<xsl:value-of select='@photo'/>_small.png</xsl:attribute>
+                <xsl:attribute name="width"><xsl:value-of select='@small_x'/></xsl:attribute>
+                <xsl:attribute name="height"><xsl:value-of select='@small_y'/></xsl:attribute>
+              </xsl:element>
+	    </xsl:element>
+	    <br/>
+	    <b css:padding="0px" css:margin="0px"  css:height='20px' css:overflow="hidden" css:font-size='9px'>
+              <xsl:value-of select='@name'/>
+            </b>
+            <span class='price' css:font-size='10px'><xsl:value-of select='@price'/></span>
+          </p>
+        </xsl:for-each>
+      </div>
+      <br css:clear='both'/>
+            <div id='creepingline' class='creepingline'>
+        <iframe frameborder='0' scrolling='no' marginheight='0' marginwidth='0' css:height='20px' css:border='0px none' css:width='550px' src='/line'></iframe>
+        <div class='corner1'></div>
+        <div class='corner2'></div>
+        <div class='corner3'></div>
+        <div class='corner4'></div>
+      </div>
+    </xsl:for-each>
+    <xsl:for-each select="/R/data/cats/cat">
+      <xsl:element name='div'>
+        <xsl:attribute name='class'>week-goods goods</xsl:attribute>
+        <xsl:attribute name='css:height'>240px</xsl:attribute>
+        <xsl:attribute name='css:overflow'>hidden</xsl:attribute>
+        <xsl:attribute name='css:border-bottom'>7px solid #ff99cc</xsl:attribute>
+        <xsl:attribute name='id'>goods<xsl:value-of select='@id'/></xsl:attribute>
+        <xsl:for-each select="./prods/prod">
+	  <p class="center-column-goods" css:height="210px" css:width='185px' align='center'>
+            <xsl:element name='a'>
+              <xsl:attribute name="href">category?category_id=<xsl:value-of select='@cat_id'/></xsl:attribute>
+	      <xsl:attribute name="class">category</xsl:attribute>
+	      <xsl:attribute name="css:height">40px</xsl:attribute>
+	      <xsl:attribute name="css:margin-bottom">0px</xsl:attribute>
+	      <xsl:attribute name="css:overflow">hidden</xsl:attribute>
+	      <xsl:attribute name="css:font-size">13px</xsl:attribute>
+	      <xsl:value-of select='@cat_name'/>
+            </xsl:element>
+            <xsl:element name='a'>
+      	      <xsl:attribute name="class">thumb</xsl:attribute>
+              <xsl:attribute name="href">product?product_id=<xsl:value-of select='@id'/></xsl:attribute>
+	      <xsl:attribute name="css:width"><xsl:value-of select='@small_x'/>px</xsl:attribute>
+	      <xsl:attribute name="css:margin">0px <xsl:value-of select='@margin_x'/>px</xsl:attribute>
+               <xsl:element name='img'>
+                <xsl:attribute name="alt"><xsl:value-of select='@name'/></xsl:attribute>
+                  <xsl:attribute name="title"><xsl:value-of select='@name'/></xsl:attribute>
+                <xsl:attribute name="border">0</xsl:attribute>
+                <xsl:attribute name="src">/<xsl:value-of select='@path'/>/<xsl:value-of select='@photo'/>_small.png</xsl:attribute>
+                <xsl:attribute name="width"><xsl:value-of select='@small_x'/></xsl:attribute>
+                <xsl:attribute name="height"><xsl:value-of select='@small_y'/></xsl:attribute>
+              </xsl:element>
+	    </xsl:element>
+	    <br/>
+	    <b css:padding="0px" css:margin="0px"  css:height='20px' css:overflow="hidden" css:font-size='9px'>
+              <xsl:value-of select='@name'/>
+            </b>
+            <span class='price' css:font-size='10px'><xsl:value-of select='@price'/></span>
+          </p>
+        </xsl:for-each>
+	</xsl:element>
+</xsl:for-each>
+        <script>
+          $('.goods').css('width', $(document).width()-500+'px');
+	        $("#creepingline").css("width" , $(document).width()-500+'px');
+        </script>
+  </xsl:template>
+  <xsl:template name="copy">
+    <xsl:copy>
+      <xsl:apply-templates/>
+    </xsl:copy>
+  </xsl:template>
+</xsl:stylesheet>

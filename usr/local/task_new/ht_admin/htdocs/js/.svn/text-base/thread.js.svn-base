@@ -1,0 +1,54 @@
+success_perf = function(data){
+  data = $(data);
+  sel_in =  $('select#performer_id');
+  sel_in.children().remove();
+  data.children('option').appendTo(sel_in);
+};
+success_comment = function(data){
+  data = $(data);
+  $('textarea#message').val("");
+  $('textarea#message').val(data.children('textarea').val());
+  $('div#inst').children().remove();
+  data.children('pre#comment').appendTo($('div#inst'));
+};
+
+(function($){
+ $(document).ready(function(){
+	$('select#performer').change(function(){
+    group_id = $('select#performer').val();
+    $.ajax({
+          type: 'POST',
+          url: '/perf',
+          data: {'id':group_id},
+          success: success_perf,
+
+      });
+  });
+	$('select#title_id').change(function(){
+    task_id = $('select#title_id').val();
+    $.ajax({
+          type: 'POST',
+          url: '/comment',
+          data: {'task_id':task_id},
+          success: success_comment
+      });
+  });
+  if ($('div#perf').text()){
+    group_id = $('select#performer').val();
+    $.ajax({
+          type: 'POST',
+          url: '/perf',
+          data: {'id':group_id, 'perf_id':$('div#perf').text()},
+          success: success_perf
+      });
+  };
+  if ($('select#title_id').val()){
+    $.ajax({
+          type: 'POST',
+          url: '/comment',
+          data: {'task_id':$('select#title_id').val()},
+          success: success_comment
+      });
+  };
+ });
+})(jQuery);
